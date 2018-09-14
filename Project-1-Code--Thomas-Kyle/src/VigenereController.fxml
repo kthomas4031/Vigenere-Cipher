@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.pkg1.code.thomas.kyle.VigenereControllerController">
+   <children>
+      <Label layoutX="135.0" layoutY="35.0" prefHeight="65.0" prefWidth="331.0" text="Vigenere Cipher" textFill="RED">
+         <font>
+            <Font name="Book Antiqua Bold" size="40.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="inp" layoutX="33.0" layoutY="127.0" prefHeight="200.0" prefWidth="200.0" promptText="Input String" wrapText="true" />
+      <TextArea fx:id="oup" layoutX="367.0" layoutY="127.0" prefHeight="200.0" prefWidth="200.0" wrapText="true" />
+      <Button fx:id="encryptor" layoutX="269.0" layoutY="175.0" mnemonicParsing="false" onAction="#encrypt" text="Encrypt" />
+      <Button fx:id="decryptor" layoutX="269.0" layoutY="255.0" mnemonicParsing="false" onAction="#decrypt" text="Decrypt" />
+   </children>
+</Pane>
